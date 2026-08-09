@@ -1,5 +1,8 @@
 package com.example.demo.repository;
 
-public class GameRepository {
-    
+import com.example.demo.model.Game;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface GameRepository extends JpaRepository<Game, Long> {
+
 }
